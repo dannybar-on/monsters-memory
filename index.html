@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My App</title>
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <img src="img/layout/logo.png" draggable="false" />
+        <h1>Memory Monsters</h1>
+        <span style="margin-top: 10px" id="usernameSpan"></span>
+        <button class="btn" onclick="changeUser()">Change User</button>
+        <button id="restartBtn" class="btn hidden" onclick="restartGame()">
+          PLAY AGAIN!
+        </button>
+        <span id="bestTime"></span>
+        <span id="stopwatch">00:00:00</span>
+        <button class="mute-btn" onclick="toggleMute()">TOGGLE SOUND <i class="bi bi-volume-up-fill"></i></button>
+      </div>
+    </div>
+    <div id="gameBoard" class="container">
+      <div class="card" data-card="1" onclick="cardClicked(this)">
+        <img src="img/cards/1.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="7" onclick="cardClicked(this)">
+        <img src="img/cards/7.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="1" onclick="cardClicked(this)">
+        <img src="img/cards/1.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="7" onclick="cardClicked(this)">
+        <img src="img/cards/7.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="5" onclick="cardClicked(this)">
+        <img src="img/cards/5.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="5" onclick="cardClicked(this)">
+        <img src="img/cards/5.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="4" onclick="cardClicked(this)">
+        <img src="img/cards/4.png" draggable="false" alt="" />
+        <img class="back" src="img/cards/back.png" draggable="false" alt="" />
+      </div>
+      <div class="card" data-card="4" onclick="cardClicked(this)">
+        <img src="img/cards/4.png" draggable="false" alt="" />
+        <img class="back" src="img/cards/back.png" draggable="false" alt="" />
+      </div>
+      <div class="card" data-card="3" onclick="cardClicked(this)">
+        <img src="img/cards/3.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="3" onclick="cardClicked(this)">
+        <img src="img/cards/3.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="2" onclick="cardClicked(this)">
+        <img src="img/cards/2.png" draggable="false" alt="" />
+        <img class="back" src="img/cards/back.png" draggable="false" alt="" />
+      </div>
+      <div class="card" data-card="2" onclick="cardClicked(this)">
+        <img src="img/cards/2.png" draggable="false" alt="" />
+        <img class="back" src="img/cards/back.png" draggable="false" alt="" />
+      </div>
+      <div class="card" data-card="8" onclick="cardClicked(this)">
+        <img src="img/cards/8.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="8" onclick="cardClicked(this)">
+        <img src="img/cards/8.png" draggable="false" />
+        <img class="back" src="img/cards/back.png" draggable="false" />
+      </div>
+      <div class="card" data-card="6" onclick="cardClicked(this)">
+        <img src="img/cards/6.png" draggable="false" alt="" />
+        <img class="back" src="img/cards/back.png" draggable="false" alt="" />
+      </div>
+      <div class="card" data-card="6" onclick="cardClicked(this)">
+        <img src="img/cards/6.png" draggable="false" alt="" />
+        <img class="back" src="img/cards/back.png" draggable="false" alt="" />
+      </div>
+    </div>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>

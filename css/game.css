@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: lightblue;
+  padding: 20px;
+  border-bottom: 10px solid darkcyan;
+  color: darkcyan;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  align-items: center;
+}
+
+.card {
+  background-color: pink;
+  height: 165px;
+  width: 165px;
+  float: left;
+  margin: 5px;
+}
+
+.card img {
+  position: absolute;
+}
+
+.flipped .back {
+  display: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin: 10px 0;
+  width: 125px;
+}
+
+.mute-btn {
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
